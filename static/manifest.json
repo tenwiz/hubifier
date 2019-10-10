@@ -1,0 +1,23 @@
+{
+  "name": "Hubifier",
+  "version": "1.0",
+  "description": "Github notifications",
+  "permissions": [
+    "notifications"
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Hubifier",
+    "default_popup": "popup/index.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "manifest_version": 2
+}

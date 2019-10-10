@@ -1,0 +1,93 @@
+body {
+  max-width: 350px;
+  min-width: 200px;
+  background: #444;
+  color: whitesmoke;
+  padding: 0;
+  margin: 0;
+  max-height: 500px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.notifications {
+  overflow-y: scroll;
+}
+
+.footer {
+  padding: .8em;
+  display: flex;
+
+  .read {
+    cursor: pointer;
+    flex: 1 1 auto;
+  }
+
+  .time {
+    text-align: right;
+    display: inline-block;
+    flex: 1 1 auto;
+  }
+}
+
+
+.notification {
+  padding: .8em;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(100, 100, 100, 0.3);
+  }
+
+  .repo {
+    font-size: .9em;
+    opacity: .6;
+  }
+
+  .title {
+    font-size: 1.1em;
+  }
+}
+
+.auth {
+  width: 300px;
+  padding: 1em;
+
+  h1 {
+    text-align: center;
+  }
+
+  input {
+    margin: auto auto;
+    display: block;
+    width: 90%;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background: rgba(100, 100, 100, .5);
+    padding: .3em;
+    font-size: 1.2em;
+    color: mintcream;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.has-error {
+      border: 1px solid indianred;
+    }
+  }
+
+  .error {
+    margin-left: 1em;
+    color: indianred;
+  }
+
+  button {
+    padding: .5em;
+    font-size: 1.2em;
+    margin: 1em auto auto;
+    border-radius: 4px;
+    display: block;
+  }
+}
