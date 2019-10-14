@@ -3,12 +3,14 @@ import * as React from "preact/compat";
 import {useEffect, useState} from "preact/hooks";
 import './index.scss'
 import Notification from "./Notification"
-import Auth from "~popup/Auth";
+import Auth from "./Auth";
+import github from "~github";
 
 const App = () => {
     const [notifications, setNotifications] = useState([])
     const [lastFetch, setLastFetch] = useState('')
-    const [token, setToken] = useState<string>(localStorage.getItem("auth_token"))
+    const [token, setToken] = useState(github.getToken())
+
 
     useEffect(() => {
         chrome.runtime.sendMessage({type: 'getNotifications'}, (data) => {
@@ -18,7 +20,7 @@ const App = () => {
     }, [])
 
     useEffect(() => {
-        if(token){
+        if (token) {
             localStorage.setItem("auth_token", token)
             chrome.runtime.sendMessage({type: 'set_token', token}, (data) => {
             });

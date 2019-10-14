@@ -7,6 +7,7 @@ export interface GHNotification {
     reason: string
     unread: boolean
     updated_at: string
+    data: any
     url: string
     subject: {
         title: string
@@ -29,8 +30,10 @@ class HttpError extends Error {
     }
 }
 
-let token: string = null;
+let token: string = localStorage.getItem("auth_token");
+
 const setToken = (t) => token = t;
+
 const getToken = () => token;
 
 const getConfig = () => {

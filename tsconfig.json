@@ -1,9 +1,16 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "target": "es2015",
+    "module": "es2015",
     "outDir": "build",
     "esModuleInterop": true,
     "jsx": "react",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es5",
+      "es6"
+    ],
     "baseUrl": "./src",
     "paths": {
       "~*": [
