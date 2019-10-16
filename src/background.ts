@@ -42,11 +42,13 @@ const showNotification = (n: GHNotification) => {
 }
 
 const updateBadge = () => {
-    if (notifications.length > 0)
-        chrome.browserAction.setBadgeBackgroundColor({color: "#288563"});
-    else
-        chrome.browserAction.setBadgeBackgroundColor({color: "#ffffff00"});
-    chrome.browserAction.setBadgeText({text: "" + notifications.length})
+    if (notifications.length > 0) {
+        chrome.browserAction.setBadgeBackgroundColor({color: "#076CE2"});
+        chrome.browserAction.setBadgeText({text: "" + notifications.length})
+    } else {
+        // chrome.browserAction.setBadgeBackgroundColor({color: "#ffffff00"});
+        chrome.browserAction.setBadgeText({text: ""})
+    }
 }
 
 const openNotification = (n: GHNotification) => {

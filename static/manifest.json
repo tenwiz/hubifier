@@ -6,10 +6,18 @@
     "notifications"
   ],
   "icons": {
-    "128": "icon_black.png"
+    "128": "full_icon.png",
+    "48": "full_icon48.png",
+    "32": "full_icon32.png",
+    "16": "full_icon16.png"
   },
   "browser_action": {
-    "default_icon": "icon_black.png",
+    "default_icon": {
+      "128": "action_icon.png",
+      "48": "action_icon48.png",
+      "32": "action_icon32.png",
+      "16": "action_icon16.png"
+    },
     "default_title": "Hubifier",
     "default_popup": "popup/index.html"
   },
