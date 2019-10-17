@@ -2,8 +2,9 @@
   "name": "hubifier",
   "version": "0.0.1",
   "scripts": {
+    "clean": "rm -rf build",
     "serve": "parcel src/background.ts src/popup/index.html -d build",
-    "build": "parcel build src/background.ts src/popup/index.html -d build",
+    "build": "yarn run clean && parcel build src/background.ts src/popup/index.html -d build",
     "watch": "parcel watch build src/background.ts src/popup/index.html -d build"
   },
   "devDependencies": {
