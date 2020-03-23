@@ -1,12 +1,12 @@
-## Hubifier
+# Hubifier
 
 Simple Chrome extension to show github notifications as native notifications.
 
-#### How to use
+## How to use
 
-Download the extension from the releases page https://github.com/duiker101/hubifier/releases
+Download the extension from the releases page https://github.com/tenwiz/hubifier/releases
 
-Drag the crx file to chrome and install it. 
+Drag the crx file to chrome and install it.
 
 A new icon will appear next to your status bar and if you click it you will be prompted for a Private Access Token. You can get one following this instructions: https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line#creating-a-token
 
