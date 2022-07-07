@@ -19,7 +19,7 @@
     "axios": "^0.21.2",
     "eslint": "^6.5.1",
     "github": "^14.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "preact": "^10.0.0"
   },
   "browserslist": [
